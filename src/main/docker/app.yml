@@ -1,0 +1,22 @@
+version: '2'
+services:
+  jhipsterjavaangularapp-app:
+    image: jhipsterjavaangularapp
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://jhipsterjavaangularapp-mysql:3306/jhipsterjavaangularapp?useUnicode=true&characterEncoding=utf8&useSSL=false
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+      - SPRING_DATA_JEST_URI=http://jhipsterjavaangularapp-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://jhipsterjavaangularapp-elasticsearch:9200
+    ports:
+      - 8080:8080
+  jhipsterjavaangularapp-mysql:
+    extends:
+      file: mysql.yml
+      service: jhipsterjavaangularapp-mysql
+  jhipsterjavaangularapp-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: jhipsterjavaangularapp-elasticsearch

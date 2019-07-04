@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "jhipsterJavaAngularApp",
+    "packageName": "io.github.java.sampleapp",
+    "packageFolder": "io/github/java/sampleapp",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "gradle",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.1.2",
+    "jwtSecretKey": "NGU1NzBiN2MyMjYwNTNmYjhmMTFiM2I1OGJiNjlkNjFlMThkYmM5YmY0Y2ZmMTUxZDcyODAzYTc4MzI5NWMwODcxMGQ4NTM0M2Y2Zjc2M2ExMTUyZDNhMDJlYTA1ZjA4YWEwYjdmY2YxMzE1ZWYyYWU5NTA4MmIyNTk2ZjAzODA=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "vladddCp",
+  "repository-name": "jhipsterJavaAngularApp"
+}
